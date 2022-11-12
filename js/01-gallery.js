@@ -21,15 +21,6 @@ galleryEl.insertAdjacentHTML("afterbegin", markupGallery);
 const createModalWindow = (imageAdress) => {
   window.instance = basicLightbox.create(
     `<img src="${imageAdress}">`
-    // ,
-    // {
-    //   onShow: () =>
-    //     window.addEventListener("keydown", closeModalWindowByEscPressing),
-    //   onClose: () => {
-    //     window.removeEventListener("keydown", closeModalWindowByEscPressing);
-    //     refs.body.classList.remove("disable-scroll");
-    //   },
-    // }
   );
   return instance;
 };
